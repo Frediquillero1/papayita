@@ -2,9 +2,10 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+/* #02E090 */
 @theme {
   --color-papayita_green: oklch(0.5596 0.1545 149.67);
+  --color-papayita_emerald: oklch(0.7992 0.1845 158.69);
   --color-papayita_pink: oklch(0.6937 0.1746 6.39);
 }
 
@@ -67,7 +68,7 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.5596 0.1545 149.67);
   --input: oklch(0.5596 0.1545 149.67);
-  --ring: oklch(0.709 0.01 56.259);
+  --ring: oklch(0.5752 0.1016 183.47);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
