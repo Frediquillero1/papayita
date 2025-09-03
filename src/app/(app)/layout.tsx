@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import './globals.css';
+import { TRPCReactProvider } from '@/trpc/client';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -9,7 +10,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'Papayita Your Marketplace, Your Rules.',
   description:
-    'Papayaita – Where Elegance Meets Everyday Living is a curated e-commerce destination designed for those who appreciate quality, sophistication, and timeless style. 🌴✨',
+    'Papayita – Where Elegance Meets Everyday Living is a curated e-commerce destination designed for those who appreciate quality, sophistication, and timeless style. 🌴✨',
 };
 
 export default function RootLayout({
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${dmSans.className} antialiased`}>{children}</body>
+      <body className={`${dmSans.className} antialiased`}>
+          <TRPCReactProvider>{children}</TRPCReactProvider>
+      </body>
     </html>
   );
 }

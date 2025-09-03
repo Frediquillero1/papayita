@@ -1,17 +1,18 @@
 'use client';
 
+import Link from 'next/link';
 import { useRef, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
+import { CategoriesGetManyOutput } from '@/modules/categories/types';
+
 import { SubcategoryMenu } from './subcategory-menu';
 import { useDropdownPosition } from './use-dropdown-position';
-import { CustomCategory } from '../types';
-import Link from 'next/link';
 
 interface Props {
-  category: CustomCategory;
+  category: CategoriesGetManyOutput[1];
   isActive?: boolean;
   isNavigationHovered?: boolean;
 }
@@ -35,7 +36,7 @@ export const CategoryDropdown = ({
 
   const dropdownPosition = getDropdownPosition();
 
-  // TODO: Potentialy improve mobile
+  // TODO: Potential improve mobile
   // const toggleDropdown = () => {
   //   if (category.subcategories?.docs?.length) {
   //     setIsOpen(!isOpen);
