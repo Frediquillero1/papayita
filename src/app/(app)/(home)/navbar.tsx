@@ -86,9 +86,9 @@ export const Navbar = () => {
         <Button
           asChild
           variant='secondary'
-          className='border-l border-t-0 border-b-0 border-r-0 px-12 h-full rounded-none bg-white hover:bg-papayita_pink  transition-colors text-lg'
+          className='border-l border-t-0 border-b-0 border-r-0 px-12 h-full rounded-none bg-white hover:bg-papayita_pink transition-colors text-lg'
         >
-          <Link href='/sign-in'>
+          <Link prefetch href='/sign-in'>
             Log in
           </Link>
         </Button>
@@ -96,7 +96,7 @@ export const Navbar = () => {
           asChild
           className='border-l border-t-0 border-b-0 border-r-0 px-12 h-full rounded-none bg-papayita_green text-white hover:bg-papayita_pink  hover:text-white transition-colors text-lg'
         >
-          <Link href='/sign-up'>
+          <Link prefetch href='/sign-up'>
             Start selling
           </Link>
         </Button>
