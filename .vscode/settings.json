@@ -3,7 +3,10 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
 
   "cSpell.words": [
+    "cmdk",
+    "nuqs",
     "Papayita",
-    "payloadcms"
+    "payloadcms",
+    "vaul"
   ]
 }
