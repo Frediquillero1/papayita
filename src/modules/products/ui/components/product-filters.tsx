@@ -75,7 +75,7 @@ export const ProductFilters = () => {
           </button>
         )}
       </div>
-      <ProductFilter title='Price'>
+      <ProductFilter title='Price' className='border-b-0'>
         <PriceFilter
           minPrice={filters.minPrice}
           maxPrice={filters.maxPrice}
