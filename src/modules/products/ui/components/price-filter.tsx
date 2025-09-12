@@ -1,3 +1,5 @@
+'use client';
+
 import { ChangeEvent } from 'react';
 
 import { Input } from '@/components/ui/input';
