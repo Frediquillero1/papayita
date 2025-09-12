@@ -47,5 +47,5 @@ export const ProductSort = () => {
         Hot & New
       </Button>
     </div>
-  )
-}
+  );
+};

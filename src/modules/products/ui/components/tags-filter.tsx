@@ -60,7 +60,7 @@ const onClick = (tag: string) => {
         <button
           disabled={isFetchingNextPage}
           onClick={() => fetchNextPage()}
-          classname='underline font-medium justify-start text-start disabled:opacity-50 cursor-pointer'
+          className='underline font-medium justify-start text-start disabled:opacity-50 cursor-pointer'
         >
           Load more...
         </button>
